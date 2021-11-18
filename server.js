@@ -35,10 +35,13 @@ db.mongoose
         process.exit();
     });
 
+//user route
 require("./app/routes/user.route")(app);
 
+//user vechicle
 require("./app/routes/vehicle.route")(app);
 
+//user vechicke owner
 require("./app/routes/vehicle_owner.route")(app);
 
 // set port, listen for requests

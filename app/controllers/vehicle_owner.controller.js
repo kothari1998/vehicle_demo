@@ -4,10 +4,10 @@ const vehcilesOwnerData = db.vehciles_owners;
 // Create vehicle ownerAPI
 exports.create = (req, res) => {
     // Create a User
-    const vehcileOwner = new vehcilesData({
+    const vehcileOwner = new vehcilesOwnerData({
         user_id: req.body.user_id,
         vehicle_uuid: req.body.vehicle_uuid,
-        isDeleted: vehicle_uuid.isDeleted
+        isDeleted: req.body.isDeleted
     });
 
     // Save User in the database
