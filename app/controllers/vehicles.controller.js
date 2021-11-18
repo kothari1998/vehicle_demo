@@ -70,7 +70,7 @@ User.find({ isDelete : false })
         // dbUser array
         vehcilesData.find({ user_id: { $in: dbUser } })
             .then(data => {
-                console.log("Students in Database Courses:")
+                console.log("vehcile in Database:")
                 console.log(data);
             })
             .catch(error => {
